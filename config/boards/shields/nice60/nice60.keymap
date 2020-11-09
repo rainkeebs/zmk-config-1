@@ -39,7 +39,7 @@
 	&bt BT_SEL 0  &bt   BT_SEL 1   &kp UARW  &kp   E   &kp R &kp T &kp Y &kp U &kp   I   &out OUT_TOG   &kp   P   &kp LBKT &kp RBKT &kp BSLH 
 	&kp  CLCK &kp LARW  &kp DARW  &kp RARW &kp F &cp M_VOLD &cp M_VOLU &cp M_PREV &cp M_PLAY   &cp M_NEXT  &kp  SCLN  &kp QUOT &kp RET
 	&kp LSFT   &rgb_ug RGB_HUI    &rgb_ug RGB_HUD   &rgb_ug RGB_SAI   &rgb_ug RGB_SAD   &rgb_ug RGB_BRI   &rgb_ug RGB_BRD   &rgb_ug RGB_SPI   &rgb_ug RGB_SPD  &rgb_ug RGB_EFF   &kp   FSLH           &kp RSFT
-	&bootloader &reset   &bt BT_CLR                  &ext_power EP_TOG                 &kp   PRSC    &kp   RGUI     &trans     &kp   DEL
+	&bootloader &reset   &bt BT_CLR                  &ext_power EP_TOG                 &rgb_ug RGB_TOG    &kp   RGUI     &trans     &kp   DEL
 			>;
 		};
 	};
