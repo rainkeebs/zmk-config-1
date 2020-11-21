@@ -1,9 +1,10 @@
 
-if SHIELD_NICE60
+if SHIELD_BDN9
 
 config ZMK_KEYBOARD_NAME
-	default "nice!60"
+	default "BDN9"
 
 config ZMK_KSCAN_DIRECT_POLLING
 	default y
+	
 endif

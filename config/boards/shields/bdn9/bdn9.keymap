@@ -1,0 +1,27 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h> 
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+
+// --------------------------------
+// |   MUTE   |   LAYER |  SAVE  |
+// |   CAPS   |   UARW  |  FIND  |
+// |  LARW    |   DARW  |  RARW  |   
+// --------------------------------
+
+            bindings = <
+    &kp E   &kp Q     &kp W        
+    &kp T   &kp A     &kp S      
+    &kp L   &kp Z     &kp X   
+                                
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+    };
+};
