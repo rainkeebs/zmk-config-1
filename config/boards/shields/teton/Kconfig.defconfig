@@ -1,0 +1,9 @@
+if SHIELD_TETON
+
+config ZMK_KEYBOARD_NAME
+	default "TETON2X3"
+
+endif
+
+
+
