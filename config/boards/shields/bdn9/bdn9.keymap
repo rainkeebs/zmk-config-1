@@ -11,9 +11,9 @@
         default_layer {
 
             bindings = <
-    &kp C &ext_power EP_TOG  &kp S
-    &kp P &bt BT_CLR &kp F
-    &bt BT_CLR &kp H &kp R
+    &kp C &mo 1  &kp LC(S)
+    &kp LC(F) &kp UP &kp C_MUTE
+    &kp LEFT &kp DOWN &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -22,8 +22,8 @@
          nav_layer {
 
              bindings = <
-     &trans     &trans            &bootloader 
-     &kp ENTER  &ext_power EP_TOG &out OUT_TOG
+     &trans     &trans            &none
+     &kp ENTER  &none &none
      &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1
              >;
 

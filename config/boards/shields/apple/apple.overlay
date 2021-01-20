@@ -41,6 +41,7 @@ RC(4,0)    RC(4,1)   RC(4,2) RC(4,3)                    RC(4,8)                 
 			, <&gpio1 10 GPIO_ACTIVE_HIGH>
 			, <&gpio1 11 GPIO_ACTIVE_HIGH>
 			, <&gpio1 6  GPIO_ACTIVE_HIGH>
+			, <&right_io 6  GPIO_ACTIVE_HIGH>
 			;
 
 		col-gpios
@@ -66,3 +67,16 @@ RC(4,0)    RC(4,1)   RC(4,2) RC(4,3)                    RC(4,8)                 
 	// TODO: RGB node(s)
 };
 
+&spi1 {
+	status = "okay";
+
+	right_io: mcp23017@40 {
+		compatible = "microchip,mcp23017";
+		status = "okay";
+		gpio-controller;
+		reg = <0x40>;
+		label = "RIGHT_IO";
+		#gpio-cells = <2>;
+		ngpios = <16>;
+	};
+};
