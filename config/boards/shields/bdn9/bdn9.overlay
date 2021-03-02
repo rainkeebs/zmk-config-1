@@ -11,9 +11,9 @@
 		label = "KSCAN";
 
 		input-gpios
-			= <&teton_col 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&teton_col 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-			, <&teton_col 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			= <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&gpio0 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 			, <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>

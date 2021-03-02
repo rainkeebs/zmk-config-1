@@ -1,9 +1,10 @@
 
-if SHIELD_APPLE
+if SHIELD_ONEKEY
 
 config ZMK_KEYBOARD_NAME
-	default "apple?"
+	default "onekey"
 
 config ZMK_KSCAN_DIRECT_POLLING
 	default y
+	
 endif
